@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookskey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Bookskey</h1>
+    </div>
+    <div class="bookContainer" id="addBook">
+        <div class="container">
+            <h2>rich dad poor dad</h2>
+            <h4>robert</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolores voluptatem magnam recusandae ut
+                molestiae illo saepe laborum? Aspernatur eos, eligendi perferendis ratione nemo consequuntur fugit quos
+                illo eaque libero?</p>
+            <button class="deletButton" onclick="delet(event)">Delet</button>
+        </div>
+    </div>
+    <div class="over_lay" id="overLayPopUp"> </div>
+    <div class="over_laybox" id="overLayPopUpBox">
+        <h2 id="addBookInput">ADD BOOK</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book_title_input">
+            <input type="text" placeholder="Book Author" id="book_auther_input" class="input_second">
+            <textarea placeholder="Short Description" id="book_description_input"></textarea>
+            <button id="buttonAdd">ADD</button>
+            <button id="buttonClose">CLOSE</button>
+        </form>
+    </div>
+    <button class="add_button" id="bookContainer">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
